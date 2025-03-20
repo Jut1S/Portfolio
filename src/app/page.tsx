@@ -1,13 +1,25 @@
 import styles from './Page.module.css'
+import Header from "@/components/Header/Header";
+import Container from "@/components/Container/Container";
 
 export default function Home() {
-  return (
-      <div className={styles.container}>
-        <div className={styles.content}>
-            <h2>Hi, my name is Nikita</h2>
-            <strong>a frontend developer</strong>
-            <p>with passion for learning and creating</p>
-        </div>
-      </div>
-  );
+    return (
+        <>
+            <Header/>
+            <main className={styles.section}>
+                <Container>
+                    <ul className={styles.content_list}>
+                        <li className={styles.content_item}>
+                            <h2 className={styles.title}>Stack</h2>
+                            <p>
+                                JavaScript, TypeScript, ReactJS, Redux,
+                                HTML, CSS, NPM, Yarn.
+                            </p>
+                        </li>
+                    </ul>
+                </Container>
+            </main>
+        </>
+
+    );
 }

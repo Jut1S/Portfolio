@@ -1,13 +1,15 @@
-.container {
+.content_list{
     display: flex;
     justify-content: center;
-    align-items: center; /* Центрирование по вертикали */
-    height: 100vh;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
+    align-items: center;
+    min-height: 400px;
 }
 
-.content {
-
+.title{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: mediumpurple;
 }

@@ -1,0 +1,74 @@
+.header {
+    color: white;
+    padding: 10px 20px;
+    background-color: #121212;
+    border-bottom: 1px solid #26292D;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+
+.nav_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    flex-shrink: 0;
+
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Выравниваем nav по центру */
+    flex-grow: 1; /* nav занимает всё доступное пространство */
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+}
+
+.button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    flex-shrink: 0; /* Запрещаем сжатие кнопки */
+    color: #121212; /* Добавляем цвет текста для кнопки */
+}
+
+.button:hover {
+    background-color: #e9e9e9;
+}
+
+
+/* Плавное подчеркивание при наведении */
+.nav li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: #8a2be2; /* Фиолетовый цвет */
+    transition: width 0.3s ease;
+}
+
+.nav li a:hover::after {
+    width: 100%; /* Подчеркивание на всю ширину */
+}

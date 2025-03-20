@@ -1,28 +1,23 @@
-import styles from './Header.module.css'
-import Link from 'next/link';
+import styles from "@/components/Header/Header.module.css";
+import Container from "@/components/Container/Container";
 
 const Header = () => {
     return (
-        <div className={styles.container}>
-            <div className={styles.header}>
-                <h1>Portfolio</h1>
-                <nav>
-                    <ul className={styles.nav}>
-                        <li>
-                            <Link href="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link href="/projects">Projects</Link>
-                        </li>
-                        <li>
-                            <Link href="/contacts">Contacts</Link>
-                        </li>
-                    </ul>
-                </nav>
-                <button className={styles.button}>Тема</button>
-            </div>
+        <div className={styles.header}>
+            <Container>
+                <div className={styles.header_wrapper}>
+                    <h1 className={styles.header_title}>
+                        <strong>Hi, my name is <em>Nikita</em></strong>
+                        <br/>a frontend developer
+                    </h1>
+                    <div className={styles.header_text}>
+                        <p>with passion for learning and creating</p>
+                    </div>
+                    <a href="#!" className={styles.btn}>Download CV</a>
+                </div>
+            </Container>
         </div>
-    );
+    )
 }
 
 export default Header;

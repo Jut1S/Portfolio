@@ -1,16 +1,14 @@
-.container {
+.footer {
+    color: white;
+    padding: 10px 20px;
     background-color: #121212;
-    width: 100%;
-    padding: 10px 0;
+    border-top: 1px solid #26292D;
 }
 
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 .content a {
