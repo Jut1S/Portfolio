@@ -4,7 +4,7 @@ import Container from "@/components/Container/Container";
 const Contacts = () => {
     // @ts-ignore
     return (
-        <main className={styles.section}>
+        <div className={styles.section}>
             <Container>
                 <h1 className={styles.title_1}>Contacts</h1>
 
@@ -29,7 +29,7 @@ const Contacts = () => {
                     </li>
                 </ul>
             </Container>
-        </main>
+        </div>
     )
 }
 
