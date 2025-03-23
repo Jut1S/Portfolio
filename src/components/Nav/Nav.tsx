@@ -7,7 +7,9 @@ const Nav = () => {
         <div className={styles.header}>
             <Container>
                 <div className={styles.nav_wrapper}>
-                    <h1>Portfolio</h1>
+                    <h1 className={styles.logo}>
+                        <Link href="/">Portfolio</Link>
+                    </h1>
                     <nav>
                         <ul className={styles.nav}>
                             <li>
