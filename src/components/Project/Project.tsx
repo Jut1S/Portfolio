@@ -1,13 +1,15 @@
+import Link from 'next/link';
 import styles from './Project.module.css';
 
-const Project = () => {
-    // @ts-ignore
+const Project = ({ id, title, imgSrc }) => {
     return (
-        <div className={styles.project}>
-            <img src='/images/projects/01.jpg' alt="Сервис" className={styles.project_img}/>
-            <h2 className={styles.project_title}>Project title</h2>
-        </div>
-    )
-}
+        <Link href={`/projects/${id}`}>
+            <div className={styles.project}>
+                <img src={imgSrc} alt={title} className={styles.project_img} />
+                <h2 className={styles.project_title}>{title}</h2>
+            </div>
+        </Link>
+    );
+};
 
 export default Project;
