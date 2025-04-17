@@ -2,7 +2,7 @@ import styles from './Contacts.module.css'
 import Container from "@/components/Container/Container";
 
 const Contacts = () => {
-    // @ts-ignore
+
     return (
         <div className={styles.section}>
             <Container>

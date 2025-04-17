@@ -1,0 +1,41 @@
+.section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.project_img {
+    border-radius: 10px;
+    margin-bottom: 40px;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #26292D;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: mediumpurple;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.button:hover {
+    background-color: #7b4fcf;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}

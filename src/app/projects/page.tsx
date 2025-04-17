@@ -2,14 +2,13 @@ import styles from './Projects.module.css';
 import Container from "@/components/Container/Container";
 import Project from "@/components/Project/Project";
 
-// Пример данных о проектах
-const projectsData = [
-    { id: 1, title: "Project 1", imgSrc: "/images/projects/01.jpg" },
-    { id: 2, title: "Project 2", imgSrc: "/images/projects/01.jpg" },
-    { id: 3, title: "Project 3", imgSrc: "/images/projects/01.jpg" },
-    { id: 4, title: "Project 4", imgSrc: "/images/projects/01.jpg" },
-    { id: 5, title: "Project 5", imgSrc: "/images/projects/01.jpg" },
-    { id: 6, title: "Project 6", imgSrc: "/images/projects/01.jpg" },
+
+export const projectsData = [
+    { id: 1, title: "Auth", imgSrc: "/images/projects/Auth.png", bigImgSrc: "/images/projects/Auth.png" , url: "https://github.com/Jut1S/Auth"},
+    { id: 2, title: "Internet Shop", imgSrc: "/images/projects/Shop.png", bigImgSrc: "/images/projects/Shop.png", url: "https://github.com/Jut1S/Internet-shop" },
+    { id: 3, title: "Quiz", imgSrc: "/images/projects/Quiz.png", bigImgSrc: "/images/projects/Quiz.png" , url: "https://github.com/Jut1S/Quiz"},
+    { id: 4, title: "ToDo-list", imgSrc: "/images/projects/ToDo.png", bigImgSrc: "/images/projects/ToDo.png", url: "https://github.com/Jut1S/ToDo-list"},
+    { id: 5, title: "WeatherApp", imgSrc: "/images/projects/Weather.png", bigImgSrc: "/images/projects/Weather.png" , url: "https://github.com/Jut1S/WeatherApp"},
 ];
 
 export default function Projects() {

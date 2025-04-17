@@ -1,7 +1,14 @@
 import Link from 'next/link';
 import styles from './Project.module.css';
+import { FC } from 'react';
 
-const Project = ({ id, title, imgSrc }) => {
+interface ProjectProps {
+    id: number;
+    title: string;
+    imgSrc: string;
+}
+
+const Project: FC<ProjectProps> = ({ id, title, imgSrc }) => {
     return (
         <Link href={`/projects/${id}`}>
             <div className={styles.project}>

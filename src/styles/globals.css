@@ -10,9 +10,31 @@
     padding: 0;
 }
 
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: mediumpurple;
+    --nav-bg: #f8f9fa;
+    --button-bg: #e9ecef;
+    --project-bg: #fff
+
+}
+
+.dark {
+    --bg-color: #252526;
+    --text-color: #ffffff;
+    --accent-color: #b388ff;
+    --button-bg: #333333;
+    --project-bg: #121212
+}
+
+
 body {
     min-height: 100vh;
     font-family: 'DM Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 em {
